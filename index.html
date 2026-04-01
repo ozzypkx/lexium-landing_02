@@ -476,6 +476,75 @@
         gap: 24px;
       }
 
+      .statement {
+        text-align: center;
+      }
+
+      .statement-copy {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .statement-copy .section-title {
+        text-align: center;
+      }
+
+      .statement-copy .section-copy {
+        max-width: 620px;
+        margin: 18px auto 0;
+        color: var(--ink-soft);
+        text-align: center;
+      }
+
+      .statement-actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+      }
+
+      .advisors-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .advisor-card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .advisor-card img {
+        width: 100%;
+        aspect-ratio: 0.9;
+        object-fit: cover;
+        background: #e9e3da;
+      }
+
+      .advisor-name {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 22px;
+        font-weight: 200;
+        line-height: 1.2;
+      }
+
+      .advisor-role {
+        margin: 6px 0 0;
+        color: var(--gold);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .advisor-copy {
+        margin: 12px 0 0;
+        color: var(--ink-soft);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
       .chain-card,
       .feature-card {
         background: var(--panel);
@@ -672,7 +741,8 @@
         }
 
         .cards-grid,
-        .steps-grid {
+        .steps-grid,
+        .advisors-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
@@ -767,7 +837,8 @@
 
         .metrics-grid,
         .cards-grid,
-        .steps-grid {
+        .steps-grid,
+        .advisors-grid {
           grid-template-columns: 1fr;
           gap: 18px;
         }
@@ -872,6 +943,14 @@
           margin-bottom: 28px;
         }
 
+        .statement-actions {
+          margin-top: 22px;
+        }
+
+        .advisor-card {
+          gap: 12px;
+        }
+
         .cta-shell {
           padding: 72px 18px;
         }
@@ -948,7 +1027,7 @@
 
             <div class="hero-card">
               <img
-                src="https://www.figma.com/api/mcp/asset/0533dac1-90c6-4dd7-9d11-eb6cec90601b"
+                src="https://www.figma.com/api/mcp/asset/20598d12-5b26-4924-be7d-1313e3b4f100"
                 alt="Modern legal courtroom interior architectural detail"
               />
               <div class="hero-overlay">
@@ -1028,6 +1107,22 @@
           </div>
         </section>
 
+        <section class="section statement">
+          <div class="container statement-copy">
+            <p class="eyebrow">The Why</p>
+            <h2 class="section-title" style="color: var(--ink);">
+              Justice shouldn't depend on
+              <em> who can afford it.</em>
+            </h2>
+            <p class="section-copy">
+              Litigation finance exists to fund legitimate claims where the upfront cost would otherwise prevent fair legal representation. Lexium brings that access onchain with institutional rails and transparent capital coordination.
+            </p>
+            <div class="statement-actions">
+              <a class="button" href="#cta">Start investing today</a>
+            </div>
+          </div>
+        </section>
+
         <section class="section" id="about">
           <div class="container">
             <p class="eyebrow">Why On-Chain?</p>
@@ -1066,6 +1161,53 @@
             </div>
             <div style="margin-top: 36px;">
               <a class="button" href="#cta">Start investing today</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <p class="eyebrow">Advisors & Angels</p>
+            <div class="advisors-grid">
+              <article class="advisor-card">
+                <img
+                  src="https://www.figma.com/api/mcp/asset/4390e77f-0e07-4d43-86b3-9b2c76a69cab"
+                  alt="Sue-Ann Lim"
+                />
+                <div>
+                  <h3 class="advisor-name">Sue-Ann Lim (TBC)</h3>
+                  <p class="advisor-role">Advisor</p>
+                  <p class="advisor-copy">
+                    Strategic operator with experience across legal, regulatory, and financial ecosystems relevant to institutional market adoption.
+                  </p>
+                </div>
+              </article>
+              <article class="advisor-card">
+                <img
+                  src="https://www.figma.com/api/mcp/asset/4390e77f-0e07-4d43-86b3-9b2c76a69cab"
+                  alt="Chu Jung"
+                />
+                <div>
+                  <h3 class="advisor-name">Chu Jung</h3>
+                  <p class="advisor-role">Angel</p>
+                  <p class="advisor-copy">
+                    Backer focused on frontier financial infrastructure and the design of credible internet-native capital formation systems.
+                  </p>
+                </div>
+              </article>
+              <article class="advisor-card">
+                <img
+                  src="https://www.figma.com/api/mcp/asset/4a33a74d-c7b1-44de-847d-5ac34caa2724"
+                  alt="Charlie Feng"
+                />
+                <div>
+                  <h3 class="advisor-name">Charlie Feng</h3>
+                  <p class="advisor-role">Angel</p>
+                  <p class="advisor-copy">
+                    Early supporter of tokenized asset networks with a focus on distribution, trust, and bringing niche yield products to market.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </section>
@@ -1157,6 +1299,7 @@
               </p>
               <div class="cta-actions">
                 <a class="button gold" href="#">Inaugurate Account</a>
+                <a class="button-outline" href="#">Contact Us</a>
               </div>
             </div>
           </div>
