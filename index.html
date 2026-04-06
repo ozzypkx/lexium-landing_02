@@ -525,16 +525,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        gap: 10px;
         width: 100%;
         aspect-ratio: 0.9;
         background:
-          linear-gradient(135deg, #ede6dc 0%, #ddd3c3 100%);
+          radial-gradient(circle at top, rgba(197, 160, 89, 0.18), transparent 34%),
+          linear-gradient(135deg, #eee7de 0%, #dbd0c0 100%);
         border: 1px solid rgba(195, 199, 199, 0.4);
         color: rgba(31, 36, 36, 0.56);
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.18em;
         text-transform: uppercase;
+      }
+
+      .advisor-placeholder::before {
+        content: "";
+        width: 64px;
+        height: 64px;
+        border: 1px solid rgba(31, 36, 36, 0.18);
+        border-radius: 999px;
+        background:
+          radial-gradient(circle at 50% 34%, rgba(31, 36, 36, 0.24) 0 12px, transparent 13px),
+          radial-gradient(circle at 50% 88%, rgba(31, 36, 36, 0.18) 0 26px, transparent 27px);
       }
 
       .advisor-name {
@@ -1186,7 +1200,7 @@
             <p class="eyebrow">Advisors & Angels</p>
             <div class="advisors-grid">
               <article class="advisor-card">
-                <div class="advisor-placeholder">Image TBC</div>
+                <div class="advisor-placeholder">Portrait Pending</div>
                 <div>
                   <h3 class="advisor-name">Sue-Ann Lim (TBC)</h3>
                   <p class="advisor-role">Advisor</p>
